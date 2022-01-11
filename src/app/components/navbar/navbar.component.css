@@ -1,0 +1,133 @@
+.logo2 > img:nth-child(1) {
+  margin-top: 200px;
+  width: 60%;
+  }
+
+h5{
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+
+h5 strong{
+  font-size: 20px;
+color: gray;
+}
+
+h4 strong{
+  font-size: 40px;
+}
+
+
+
+.imagen{
+  text-align: center;
+}
+
+ul.navbar-nav{
+  text-align: center;
+}
+
+.fixed-top{
+  display: none;
+}
+
+.fa{
+  color:#008acc;
+  font-size: 35px;
+}
+.back{
+  display: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 600px){
+  .offcanvas-end {
+
+    width: 260px;
+    }
+
+    h4 strong{
+      font-size: 26px;
+    }
+
+    h5 strong{
+      font-size: 15px;
+  
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 990px){
+  .back{
+    display: block;
+  }
+  .fixed-top{
+    display: block;
+  }
+  
+}
+img{
+    width: 30%;
+}
+
+li{
+    list-style:none
+}
+
+#salir {
+  margin-top: 46px;
+  font-size: 20px !important;
+  padding-left: 20px;
+  }
+
+#navbarDropdownMenuLink {
+    font-size: 28px;
+text-align: end;
+
+margin-top: -50px;
+margin-right: -16px;
+    }
+
+
+
+    .dropdown-menu {
+      height: 300px;
+      padding-left: 19px;
+      height: 244px;
+      margin-left: 30px;
+      margin-top: 28px;
+      }
+      .dropdown-item{
+        font-size: 20px !important;
+        text-decoration: underline;
+      }
+      .user-info{
+        height: 100%;
+        width: 30%;
+        background-color: #FFF;
+        position: absolute;
+        right: 0px;
+        z-index: 500;
+      }
+
+      p{
+        margin-bottom: 0px;
+      }
+      .p-menu-info{
+        font-size: 10px;
+        color: #646464;
+        text-align: -moz-right;
+      }
+      
+      .rounded-circle {
+        position: absolute;
+        left: 152px;
+        margin-top: -48px;
+        }
+
+        .col-sm-12 {
+            flex: 0 0 auto;
+            width: 60%;
+            margin-right: 125px;
+            margin-top: 20px;
+          }

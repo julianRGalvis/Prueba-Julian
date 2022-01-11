@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-expand-xxl">
+  <div class="container-fluid">
+    <div class="back">
+      <a href="" [routerLink]="['/login']"><i class="fa fa-arrow-left"></i></a>
+    </div>
+    <img src="assets/logo_mb.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+        </li>
+      </ul>
+      <li class="nav-item dropdown">
+        <div class="col-sm-12" style="z-index: 500;">
+          <p class="p-menu-info" style=" font-size: 20px;"><strong>{{ nombre }}</strong></p>
+          <p class="p-menu-info" style="color: #007078;">{{ cargo }}</p>
+          <img src="assets/foto.PNG" width="60" height="60" class="rounded-circle z-depth-0" alt="avatar image">
+        </div>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="#" style="text-decoration: underline;">Mi informacion</a></li>
+          <li><a class="dropdown-item" href="#">Procesos pendientes</a></li>
+          <li><a class="dropdown-item" href="#">Cambiar clave</a></li>
+          <li [routerLink]="['/login']" id="salir"><a href="#">Salir</a></li>
+        </ul>
+      </li>
+    </div>
+  </div>
+</nav>
+<hr>
+
+<nav class="navbar navbar-light  fixed-top">
+  <div class="container-fluid">
+    <div class="back">
+      <a href="" [routerLink]="['/login']"><i class="fa fa-arrow-left"></i></a>
+    </div>
+    <img src="assets/logo_mb.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col-12 imagen">
+            <img src="assets/foto.PNG" alt="avatar image">
+          </div>
+          <h4><strong>{{ nombre }}</strong></h4>
+          <h5><strong>{{ cargo }}</strong></h5>
+        </div>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5">
+          <li><a class="dropdown-item" href="#" style="text-decoration: underline;">Mi informacion</a></li>
+          <li><a class="dropdown-item" href="#">Procesos pendientes</a></li>
+          <li><a class="dropdown-item" href="#">Cambiar clave</a></li>
+          <li [routerLink]="['/login']"><a href="#">Salir</a></li>
+          <li>
+            <div class="row">
+              <div class="logo2">
+                <img src="assets/1200px-Logo_bancosAval.png" alt="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>

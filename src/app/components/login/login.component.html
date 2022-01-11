@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="logo">
+
+        <img src="assets/logo_mb.png" alt="logo">
+        <hr>
+    </div>
+    <div class="box">
+        <form [formGroup]="formLogin" (ngSubmit)="validar()">
+            <div class="texto">
+                <strong>End To End</strong>
+            </div>
+            <div class="control">
+                <div class="form-group col-md-8">
+                    <input type="text" class="form-control" formControlName="usuario" placeholder="Usuario"
+                        [ngClass]="{'is-invalid': !formLogin.get('usuario')?.valid && formLogin.get('usuario')?.touched}">
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto form-group button">
+                <button [disabled]="!formLogin.valid" class="btn btn-primary">Ingresar</button>
+            </div>
+        </form>
+    </div>
+    <div class="row alerta">
+        <div class="col-12">
+            <div class="alert" *ngIf="viewalert">
+                <div class="alert1 alert-warning d-flex align-items-center" role="alert">
+                    <i class="fa fa-exclamation-circle fa-rotate-180"></i>
+                    <div>
+                        El usuario Ingresado no existe, Por favor intente nuevamente
+                    </div>
+                </div>
+            </div>
+            <div class="alert2" *ngIf="viewalert2">
+                <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <i class="fa fa-check-circle"></i>
+                    <div>
+                        <h1>Nombre: {{nombre}}</h1> <br>
+                        <h1>Cargo: {{cargo}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grupo">
+        <img src="assets/1200px-Logo_bancosAval.png" alt="">
+    </div>
+</div>

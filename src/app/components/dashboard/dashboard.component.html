@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+<app-footer></app-footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 informacion">
+            <p><strong>{{datos.usuario[1].empresa}}</strong></p>
+            <p>Nit: {{datos.usuario[1].nit}}</p>
+            <strong>Capa: {{datos.usuario[1].capa}}&nbsp;&nbsp;&nbsp;&nbsp;Segmento:{{
+                datos.usuario[1].segmento}}</strong>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+
+            <h5 id="texto">Indique la linea de crédito que desea</h5>
+
+            <div class="row mt-5">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/icono-prestamo-personal.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-footer "><a href="#" (click)="alertButton(2)"
+                                            [routerLink]="['/dashboard']">Continuar</a></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="fondo">
+                                        <div class="card-body">
+                                            <img src="assets/image.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-footer ">
+                                            <a (click)="alertButton(1)" style="cursor: pointer;">Continuar</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="alert" *ngIf="viewalert">
+                <div class="alert1 alert-warning d-flex align-items-center" role="alert">
+                    <i class="fa fa-exclamation-circle fa-rotate-180"></i>
+                    <div>
+                        Las demas lineas de Crédito no estarán disponibles por el momento
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
