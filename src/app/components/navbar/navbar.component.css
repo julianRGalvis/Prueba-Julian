@@ -1,6 +1,7 @@
 .logo2 > img:nth-child(1) {
-  margin-top: 200px;
+  margin-top: 125px;
   width: 60%;
+  margin-left: 35px;
   }
 
 h5{
@@ -55,6 +56,11 @@ ul.navbar-nav{
       font-size: 15px;
   
     }
+    .logo2 > img:nth-child(1) {
+      margin-top: 200px;
+      width: 60%;
+      margin-left: 35px;
+      }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 990px){
